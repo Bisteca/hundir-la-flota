@@ -115,7 +115,7 @@ def mostrar_tablero(tablero):
 
 
 """
-Ejecuta la función main() solo si el archivo se ejecuta directamente (no se importa como módulo).
+Ejecuta la función main()
 """
 
 main()
