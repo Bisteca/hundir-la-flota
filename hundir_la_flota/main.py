@@ -2,7 +2,7 @@ from utils import crea_tablero, colocar_barcos, recibir_disparo
 import random
 
 """
-Comprueba si aún quedan barcos en el tablero ("O"). Esencial para saber cuándo termina la partida.
+Comprueba si aún quedan barcos en el tablero ("O").  Para saber cuándo termina la partida.
 """
 
 def hay_barcos(tablero):
@@ -53,7 +53,7 @@ Convierte la cadena en una tupla de enteros.
 Llama a recibir_disparo para ejecutar el disparo en el tablero de la máquina.
 
 
-Permite al jugador interactuar con el juego y elegir dónde atacar. Esencial para la jugabilidad.
+Permite al jugador interactuar con el juego y elegir dónde atacar.
 
 """
 
@@ -91,14 +91,13 @@ También imprime el mensaje correspondiente en pantalla
 
 """
 def turno_maquina(tablero_jugador):
-     i = tablero_jugador.shape[0] # lineas
-     j = tablero_jugador.shape[1] # columnas
+    i = tablero_jugador.shape[0] # lineas
+    j = tablero_jugador.shape[1] # columnas
 
-     while True:
-        disparo_maquina = (random.randint(0,i-1),random.randint(0, j -1))
-        
-        recibir_disparo(tablero_jugador, disparo_maquina)
-        break
+     
+    disparo_maquina = (random.randint(0,i-1),random.randint(0, j -1))
+    recibir_disparo(tablero_jugador, disparo_maquina)
+       
 
 
 
